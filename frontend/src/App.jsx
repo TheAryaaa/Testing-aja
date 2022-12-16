@@ -7,6 +7,7 @@ import HubungiKami from './pages/hubungi/HubungiKami';
 import CaraMendafatarPengajar from './pages/CaraDaftarPengajar';
 import Login from './pages/login/Login';
 import Daftar from './pages/register/Daftar';
+import GantiFotoProfil from './pages/dashboard/GantiFotoProfil';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="mendaftar" element={<Daftar />} />
         <Route path="register" element={<Daftar />} />
       </Route>
+      <Route path="gantiphoto" element={<GantiFotoProfil />} />
     </Routes>
   );
 }

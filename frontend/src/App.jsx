@@ -7,6 +7,8 @@ import HubungiKami from './pages/hubungi/HubungiKami';
 import CaraMendafatarPengajar from './pages/CaraDaftarPengajar';
 import Login from './pages/login/Login';
 import Daftar from './pages/register/Daftar';
+import { Outlet } from 'react-router-dom';
+import Siswa from './pages/dashboard/siswa/Siswa';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path="masuk" element={<Login />} />
         <Route path="mendaftar" element={<Daftar />} />
         <Route path="register" element={<Daftar />} />
+        <Route path="siswa" element={<Siswa />} />
       </Route>
     </Routes>
   );
